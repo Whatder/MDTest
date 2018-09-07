@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
         FirstActivity.start(MainActivity.this);
     }
 
+    @OnClick(R.id.btn_img)
+    void onClickBtn() {
+        SecondActivity.start(this);
+    }
+
+
     private void initView() {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
